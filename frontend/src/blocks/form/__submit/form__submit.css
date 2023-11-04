@@ -1,0 +1,39 @@
+.form__submit {
+  margin: 0 36px 37px;
+  border: 0;
+  border-radius: 2px;
+  background-color: #000;
+  padding: 14px 0 14px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  transition-property: opacity;
+  transition-duration: .2s;
+}
+
+.form__submit:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.form__submit_inactive {
+  opacity: .2;
+  background: #e5e5e5;
+  color: #000;
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+.form__submit_inactive:hover {
+  cursor: default;
+  opacity: .2;
+}
+
+@media screen and (max-width: 918px) {
+  .form__submit {
+    margin: 13px 22px 27px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

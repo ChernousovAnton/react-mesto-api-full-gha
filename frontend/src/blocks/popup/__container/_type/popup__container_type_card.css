@@ -1,0 +1,8 @@
+.popup_container_type_card {
+  max-width: 75vw;
+  width: fit-content;
+  max-height: 75vh;
+  height: fit-content;
+  margin: auto;
+  padding: 0;
+}

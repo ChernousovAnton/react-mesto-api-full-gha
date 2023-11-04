@@ -1,0 +1,17 @@
+.auth {
+  display: flex;
+  margin: 0 auto 0;
+  flex-direction: column;
+  justify-content: start;
+
+  min-width: 358px;
+  color: white;
+}
+
+@media screen and (max-width: 918px) {
+  .auth {
+    min-height: 56px;
+    margin-top: 28px;
+    width: 100%;
+  }
+}

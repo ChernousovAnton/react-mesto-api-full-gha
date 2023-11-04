@@ -1,0 +1,12 @@
+.auth__signin-link {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  cursor: url(../../../images/custom-cursor.png) cover no-repeat;
+}
+
+.auth__signin-link:hover {
+  opacity: .6;
+  cursor: url(../../../images/custom-cursor.png) cover no-repeat;
+  
+}

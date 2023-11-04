@@ -1,0 +1,15 @@
+.tooltip__title {
+  padding: 0;
+  margin: 0 36px 60px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: normal;
+  color: #000;
+}
+
+@media screen and (max-width: 918px) {
+  .tooltip__title {
+    margin: 25px 22px 75px;
+    font-size: 20px;
+  }
+}

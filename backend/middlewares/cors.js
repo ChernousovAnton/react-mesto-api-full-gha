@@ -1,7 +1,6 @@
 const allowedCors = [
   'http://localhost:3001',
-  'http://127.0.0.1:3001',
-  'localhost:3001'
+  'http://127.0.0.1:3001'
 ];
 
 const corsHandler = (req, res, next) => {

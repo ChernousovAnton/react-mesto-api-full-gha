@@ -1,4 +1,5 @@
 import { apiOptions } from "./constants";
+import { getToken } from "./token";
 
 export class Api {
 
@@ -9,6 +10,7 @@ export class Api {
   }
 
   async _apiRequest(url, method, body) {
+    this._headers.authorization = `Bearer ${getToken()}`
     const requestOptions = {
       method: method,
       headers: this._headers
@@ -21,6 +23,16 @@ export class Api {
     if (!response.ok) return Promise.reject(`Ошибка: ${response.status} ${response.statusText}`);
     const json = await response.json();
     return json;
+  }
+
+  register({email, password}) {
+    const body = {email, password};
+    return this._apiRequest(`${this._baseUrl}/signup`, 'POST', body);
+  }
+
+  authorise({email, password}) {
+    const body = {email, password};
+    return this._apiRequest(`${this._baseUrl}/signin`, 'POST', body);
   }
 
   getInitialCards() {

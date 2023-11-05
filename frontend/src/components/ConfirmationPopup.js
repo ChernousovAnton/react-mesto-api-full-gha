@@ -14,6 +14,7 @@ export default function ConfirmationPopup(props) {
       isOpen={props.isOpen}
       onClose={props.onClose}
       onSubmit={handleSubmit}
+      isValid={true}
     />
   )
 }

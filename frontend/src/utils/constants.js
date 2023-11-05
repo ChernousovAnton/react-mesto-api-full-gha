@@ -35,18 +35,11 @@ export const textSaving = "Сохранение...";
 const methodsBodyRequired = ["POST", "PATCH", "PUT"];
 
 export const apiOptions = {
-  baseUrl: "https://mesto.nomoreparties.co/v1/cohort-72",
+  baseUrl: "http://localhost:3000",
   headers: {
-    authorization: "a7df98f9-87e5-4907-acfc-113e20edd625",
     "Content-Type": "application/json",
   },
   methodsBodyRequired: methodsBodyRequired,
 };
-
-export const apiAuthOptions = {
-  baseUrl: 'https://auth.nomoreparties.co',
-  headers: {"Content-Type": "application/json"},
-  methodsBodyRequired: methodsBodyRequired,
-}
 
 export const TOKEN_KEY = 'jwt';

@@ -4,7 +4,7 @@ import useFormAndValidation from '../hooks/useFormAndValidation';
 
 export default function AddPlacePopup(props) {
 
-  const {values, handleChange, errors, isValid, resetForm, setValues, setIsValid, setErrors} = useFormAndValidation();
+  const {values, handleChange, errors, isValid, resetForm} = useFormAndValidation();
 
   React.useEffect(() => {
     resetForm();

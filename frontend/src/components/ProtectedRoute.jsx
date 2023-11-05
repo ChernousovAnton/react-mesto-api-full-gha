@@ -1,20 +1,20 @@
 import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
 
-import { LoggedUserContext } from '../contexts/LoggedUserContext';
+import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 const ProtectedRoute = ({ onlyUnAuth, children }) => {
-  const loggedUser = React.useContext(LoggedUserContext);
+  const currentUser = React.useContext(CurrentUserContext);
 
   const location = useLocation();
 
-  if (onlyUnAuth && loggedUser?.email) {
+  if (onlyUnAuth && currentUser?.email) {
     const from = location.state?.from || { pathname: "/" };
     return (
       <Navigate to={from} replace />
     )
   }
-  if (!onlyUnAuth && !loggedUser?.email) {
+  if (!onlyUnAuth && !currentUser?.email) {
     return (
       <Navigate to={{ pathname: "/signin" }} state={{from: location}}/>
     )

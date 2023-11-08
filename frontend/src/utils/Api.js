@@ -2,7 +2,6 @@ import { apiOptions } from "./constants";
 import { getToken } from "./token";
 
 export class Api {
-
   constructor(options) {
     this._baseUrl = options.baseUrl;
     this._headers = options.headers;

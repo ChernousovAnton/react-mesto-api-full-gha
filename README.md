@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес 10.10.10.10
+IP-адрес 158.160.22.228
 
-Frontend https://my-site.com
+Frontend https://mesto2222.students.nomoredomainsmonster.ru
 
-Backend https://api.my-site.com
+Backend https://api.mesto2222.students.nomoredomainsmonster.ru

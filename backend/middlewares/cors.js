@@ -1,7 +1,5 @@
 const allowedCors = [
-  'http://localhost:3001',
-  'http://127.0.0.1:3001',
-  'localhost:3001',
+  'https://mesto2222.students.nomoredomainsmonster.ru',
 ];
 
 // eslint-disable-next-line consistent-return

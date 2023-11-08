@@ -35,7 +35,7 @@ export const textSaving = 'Сохранение...';
 const bodyMethods = ['POST', 'PATCH', 'PUT'];
 
 export const apiOptions = {
-  baseUrl: 'http://158.160.22.228:3000',
+  baseUrl: 'http://localhost:3000',
   headers: {
     'Content-Type': 'application/json',
   },

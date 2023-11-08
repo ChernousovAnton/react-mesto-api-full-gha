@@ -35,7 +35,7 @@ export const textSaving = 'Сохранение...';
 const bodyMethods = ['POST', 'PATCH', 'PUT'];
 
 export const apiOptions = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://api.mesto2222.students.nomoredomainsmonster.ru',
   headers: {
     'Content-Type': 'application/json',
   },

@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.22.228
+IP 158.160.22.228
 
 Frontend https://mesto2222.students.nomoredomainsmonster.ru
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate, useNavigate } from "react-router-dom";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
@@ -37,6 +37,8 @@ function App() {
     isOpen: false,
     type: "",
   });
+
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     api.getUserInfo()
@@ -156,7 +158,10 @@ function App() {
           setLoggedIn(true);
         }
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        setInfoTooltipState({ isOpen: true, type: "failure" });
+        console.error(err);
+      });
   }
 
   function handleRegister(dataUser) {
@@ -164,6 +169,7 @@ function App() {
       .register(dataUser)
       .then(() => {
         setInfoTooltipState({ isOpen: true, type: "success" });
+        navigate('/signin', { replace: true });
       })
       .catch(() => {
         setInfoTooltipState({ isOpen: true, type: "failure" });

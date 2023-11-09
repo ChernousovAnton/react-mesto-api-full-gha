@@ -20,15 +20,14 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
   useNewUrlParser: true,
 }).then(() => console.log('Connect to MongoDB'));
 
-app.use(corsHandler);
-app.use(requestLogger);
-
 app.get('/crash-test', () => {
   setTimeout(() => {
     throw new Error('Сервер сейчас упадёт');
   }, 0);
 });
 
+app.use(corsHandler);
+app.use(requestLogger);
 app.use(router);
 app.use(errorLogger);
 app.use(errors());
